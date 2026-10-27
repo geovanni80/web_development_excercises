@@ -1,0 +1,121 @@
+/*
+------------Cores--------------
+
+Grafite escuro: #1a1a1a
+Off-white: #fafafa
+Carvão suave: #2c2c2c
+Cinza do menu: #414141
+Pêssego suave: #ffecd0
+*/
+
+/* Seletor de tag: body com margin e padding 0, pois o navegador adiciona uma margem padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Agrupamento de seletores*/
+h1, h2, h3 {
+    color: #ffecd0;
+    letter-spacing: 1px;
+}
+
+/* Alinhamento do h1 no centro junto com outras estilizações de texto */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Tamanho do texto */
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* Seletores de tag para as áreas da página */
+header {
+    background-color: #2c2c2c;
+    padding: 8px;
+}
+
+nav {
+    background-color: #414141;
+    padding: 12px;
+}
+
+/* Espaço entre os links do menu*/
+nav a {
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2c2c;
+    margin: 30px 10px;
+    padding: 10px;
+}
+
+a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+/* aplica o estilo quando o mouse está em cima do link */
+a:hover {
+    text-decoration: underline;
+    color: #e0b050;
+}
+
+/* Seletor de classe */
+.layout_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* todos os filhos diretos de .layout_container recebem o estilo abaixo */
+.layout_container > * {
+    align-items: center;
+}
+
+/* Seletor de id */
+#propaganda {
+    display: flex;
+    flex-direction: column;
+}
+
+#propaganda > * {
+    margin: 10px;
+}
+
+/* Box Model: padding junto com o border*/
+.borda {
+    padding: 20px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fafafa;
+    border-radius: 10px;
+}
+
+/* Estilização de listas*/
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+li {
+    margin-bottom: 8px;
+}
